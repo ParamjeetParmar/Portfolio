@@ -71,7 +71,7 @@ const About = () => {
 
           <div className="grid grid-cols-2 gap-6">
             <StatCounter value={5} label="Years Experience" delay={0.1} />
-            <StatCounter value={10} label="Research Papers" delay={0.2} />
+            <StatCounter value={2} label="Research Papers" delay={0.2} />
             <StatCounter value={15} label="Workshops" delay={0.3} />
             <StatCounter value={200} label="Students Mentored" delay={0.4} />
           </div>

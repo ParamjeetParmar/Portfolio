@@ -25,7 +25,11 @@ const Skills = () => {
     { name: "Object Oriented Programming", level: 90 },
     { name: "Database Management Systems", level: 85 },
     { name: "Web Technologies", level: 88 },
-    { name: "Cloud Computing", level: 80 }
+    { name: "Cloud Computing", level: 80 },
+    { name: "Data Structure & Algorithm", level: 85 },
+    { name: "Theory of Computation", level: 75 },
+    { name: "Graph Theory", level: 80 },
+    { name: "Discrete Mathematics", level: 82 }
   ];
 
   const researchSkills = [
