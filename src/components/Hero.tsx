@@ -52,13 +52,14 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <motion.button
+          <motion.a
+            href="#research"
             whileHover={{ scale: 1.05, boxShadow: '0 0 25px rgba(0, 245, 255, 0.5)' }}
             whileTap={{ scale: 0.95 }}
-            className="group px-8 py-4 bg-neon-blue text-dark-900 rounded-xl font-bold flex items-center gap-3 transition-all"
+            className="group px-8 py-4 bg-neon-blue text-dark-900 rounded-xl font-bold flex items-center gap-3 transition-all cursor-pointer"
           >
             View Research <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-          </motion.button>
+          </motion.a>
           
           <motion.a
             href="/Resume.pdf"
