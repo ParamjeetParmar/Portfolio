@@ -27,6 +27,9 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: var(--color-dark-900);
     color: var(--color-soft-white);
@@ -55,12 +58,13 @@
     background-image: linear-gradient(to right, var(--color-neon-blue), var(--color-neon-violet));
   }
 
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
   }
 }
 

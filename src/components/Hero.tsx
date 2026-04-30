@@ -16,7 +16,7 @@ const Hero = () => {
           className="mb-6"
         >
           <span className="px-4 py-1.5 rounded-full border border-neon-blue/30 bg-neon-blue/5 text-neon-blue text-xs font-bold uppercase tracking-[0.2em] inline-flex items-center gap-2">
-            <Zap size={14} className="fill-neon-blue" /> Available for Collaboration
+            <Zap size={14} className="fill-neon-blue" /> Version 2.0 - Education & FDPs Added
           </span>
         </motion.div>
 
@@ -56,7 +56,7 @@ const Hero = () => {
             href="#research"
             whileHover={{ scale: 1.05, boxShadow: '0 0 25px rgba(0, 245, 255, 0.5)' }}
             whileTap={{ scale: 0.95 }}
-            className="group px-8 py-4 bg-neon-blue text-dark-900 rounded-xl font-bold flex items-center gap-3 transition-all cursor-pointer"
+            className="group px-8 py-4 bg-neon-blue text-dark-900 rounded-xl font-bold flex items-center gap-3 transition-all"
           >
             View Research <ArrowRight className="group-hover:translate-x-1 transition-transform" />
           </motion.a>
@@ -82,15 +82,16 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <motion.div
+      <motion.a
+        href="#about"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer hover:text-neon-blue transition-colors group"
       >
-        <span className="text-[10px] uppercase tracking-[0.3em] text-soft-white/40">Scroll to Explore</span>
+        <span className="text-[10px] uppercase tracking-[0.3em] text-soft-white/40 group-hover:text-neon-blue transition-colors">Scroll to Explore</span>
         <ChevronDown className="text-neon-blue animate-bounce" />
-      </motion.div>
+      </motion.a>
     </section>
   );
 };
