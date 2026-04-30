@@ -62,14 +62,14 @@ const Research = () => {
       title: "Real-time IoT based Carbon Footprint Monitoring System",
       type: "IEEE Publication",
       category: "IoT & Sustainability",
-      date: "2023",
+      date: "2024",
       description: "A comprehensive framework for monitoring industrial emissions using a distributed sensor network and real-time data analytics."
     },
     {
       title: "System and method for Analyzing User History",
       type: "Patent",
       category: "Data Analytics",
-      date: "2022",
+      date: "2025",
       patentNo: "202221054764",
       status: "Granted",
       description: "A novel architecture and methodology for deep analysis of historical user data to derive predictive behavioral patterns and insights."
@@ -78,7 +78,7 @@ const Research = () => {
       title: "System and method for Identifying Genuine Products",
       type: "Patent",
       category: "Security & Authentication",
-      date: "2022",
+      date: "2025",
       patentNo: "202221063526",
       description: "An advanced identification system designed to verify product authenticity and prevent counterfeiting using secure tracking technology."
     }
