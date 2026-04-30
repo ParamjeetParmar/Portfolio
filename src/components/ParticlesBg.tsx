@@ -8,8 +8,8 @@ const ParticlesBg = () => {
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container: Container | undefined) => {
-    // console.log(container);
+  const particlesLoaded = useCallback(async (_container: Container | undefined) => {
+    // console.log(_container);
   }, []);
 
   return (
