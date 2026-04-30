@@ -56,7 +56,7 @@ const Contact = () => {
 
       <footer className="mt-24 py-12 border-t border-white/5 text-center">
         <p className="text-soft-white/40 text-sm tracking-widest font-medium">
-          © 2026 RESHOO DEVI. DESIGNED FOR THE FUTURE.
+          © 2026 RESHOO DEVI.
         </p>
       </footer>
     </section>
