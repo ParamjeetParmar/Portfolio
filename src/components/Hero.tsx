@@ -16,7 +16,7 @@ const Hero = () => {
           className="mb-6"
         >
           <span className="px-4 py-1.5 rounded-full border border-neon-blue/30 bg-neon-blue/5 text-neon-blue text-xs font-bold uppercase tracking-[0.2em] inline-flex items-center gap-2">
-            <Zap size={14} className="fill-neon-blue" /> Version 2.0 - Education & FDPs Added
+            <Zap size={14} className="fill-neon-blue" />
           </span>
         </motion.div>
 
