@@ -10,7 +10,7 @@ const ResearchCard = ({ title, type, category, date, description, patentNo, stat
       perspective={1000}
       transitionSpeed={1500}
       scale={1.02}
-      className="h-full"
+      className="h-full flex-shrink-0 w-[350px] md:w-[400px] snap-center"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -59,6 +59,13 @@ const ResearchCard = ({ title, type, category, date, description, patentNo, stat
 const Research = () => {
   const works = [
     {
+      title: "IoT-Based Real-Time Carbon Monitoring in Urban and Agricultural Areas",
+      type: "Book Chapter",
+      category: "IoT & Sustainability",
+      date: "2023",
+      description: "Published in 'Advanced Systems for Monitoring Carbon Sequestration'. Research on utilizing IoT frameworks for real-time monitoring of carbon sequestration in diverse ecological environments."
+    },
+    {
       title: "Real-time IoT based Carbon Footprint Monitoring System",
       type: "IEEE Publication",
       category: "IoT & Sustainability",
@@ -94,7 +101,7 @@ const Research = () => {
           <p className="text-soft-white/60 max-w-2xl">Contributing to the global knowledge pool through publications and intellectual property.</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="flex overflow-x-auto gap-8 pb-12 snap-x scrollbar-hide no-scrollbar -mx-4 px-4 scroll-smooth">
           {works.map((work, index) => (
             <ResearchCard key={index} {...work} />
           ))}
