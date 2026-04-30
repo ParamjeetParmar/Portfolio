@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
-import { BookOpen, Award, FileText, CheckCircle } from 'lucide-react';
+import { BookOpen, Award, FileText, CheckCircle, ChevronRight } from 'lucide-react';
 
 const ResearchCard = ({ title, type, category, date, description, patentNo, status }: any) => {
   return (
@@ -107,6 +107,11 @@ const Research = () => {
               <ResearchCard {...work} />
             </div>
           ))}
+        </div>
+        
+        <div className="flex justify-center items-center gap-2 mt-4 text-soft-white/40">
+          <span className="text-xs font-medium uppercase tracking-widest">Scroll right for more</span>
+          <ChevronRight size={16} className="animate-pulse" />
         </div>
       </div>
     </section>
