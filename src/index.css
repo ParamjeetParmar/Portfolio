@@ -54,6 +54,14 @@
     color: transparent;
     background-image: linear-gradient(to right, var(--color-neon-blue), var(--color-neon-violet));
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 
 /* Custom Scrollbar */
